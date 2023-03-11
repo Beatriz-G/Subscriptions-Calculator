@@ -10,15 +10,13 @@ subTypeElement.addEventListener("change", function(e) {
     subType = e.target.value;
     //console.log(subtype);
 
-    
     updateSubscriptionDiv();
 });
 
 subDurationElement.addEventListener("change", function(e) {
-    subDurationElement = Number(e.target.value);
+    subDuration = Number(e.target.value);
     //console.log(subDuration);
 
-    
     updateSubscriptionDiv();
 });
 
@@ -32,5 +30,5 @@ var updateSubscriptionDiv = function() {
     }
 
     var total = subDuration * monthlyCost;
-    result.innerText = `You have chosen a ${subDuration} month ${subType} plan for $${total}.`
+    result.innerText = `You have chosen a ${subDuration} month ${subType} plan for $${total}.`;
 };
