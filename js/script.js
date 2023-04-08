@@ -30,5 +30,5 @@ var updateSubscriptionDiv = function() {
     }
 
     var total = subDuration * monthlyCost;
-    result.innerText = `You have chosen a ${subDuration} month ${subType} plan for $${total}.`;
+    result.innerText = `You have chosen a ${subDuration} month ${subType} plan for $${total}. Enjoy!`;
 };
